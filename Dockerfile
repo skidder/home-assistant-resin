@@ -10,4 +10,4 @@ RUN apt-get update \
 
 RUN pip3 install homeassistant
 
-CMD ["haas"]
+CMD ["python3","-m","homeassistant"]
