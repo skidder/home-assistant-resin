@@ -4,14 +4,15 @@ ENV INITSYSTEM on
 
 # Install Python.
 RUN apt-get update \
-	&& apt-get install -y python3 \
+  && apt-get install -y python3 \
     libudev-dev \
     python3-sphinx \
     python3-setuptools \
     sudo \
     git \
-	# Remove package lists to free up space
-	&& rm -rf /var/lib/apt/lists/*
+    vim \
+  # Remove package lists to free up space
+  && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install homeassistant
 RUN pip3 install --upgrade cython
