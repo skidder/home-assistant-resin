@@ -1,0 +1,24 @@
+{
+  "name": "home-assistant",
+  "version": "0.27.2",
+  "description": "A Home Assistant server on resin.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skidder/home-assistant-resin.git"
+  },
+  "keywords": [
+    "resin.io",
+    "home-assistant",
+    "home",
+    "assitant"
+  ],
+  "author": "Shaun Mulligan <scott@kidder.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skidder/home-assistant-resin/issues"
+  },
+  "homepage": "https://github.com/skidder/home-assistant-resin#readme",
+  "dependencies": {
+    "express": "*"
+  }
+}
