@@ -16,6 +16,8 @@ RUN apt-get update \
   # Remove package lists to free up space
   && rm -rf /var/lib/apt/lists/*
 
+RUN pip3 install pybluez
+RUN pip3 install pybluez[ble]
 RUN pip3 install homeassistant
 RUN pip3 install --upgrade cython
 
