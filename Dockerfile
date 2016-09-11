@@ -11,6 +11,8 @@ RUN apt-get update \
     sudo \
     git \
     vim \
+    bluetooth \
+    libbluetooth-dev \
   # Remove package lists to free up space
   && rm -rf /var/lib/apt/lists/*
 
