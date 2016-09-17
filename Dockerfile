@@ -19,5 +19,14 @@ RUN apt-get update \
 
 RUN pip3 install pybluez
 RUN pip3 install homeassistant==0.28.2
+RUN pip3 install sqlalchemy
+RUN pip3 install phue
+RUN pip3 install xmltodict
+RUN pip3 install cherrypy
+RUN pip3 install static3
+RUN pip3 install Werkzeug
+RUN pip3 install astral
+RUN pip3 install fuzzywuzzy
+RUN pip3 install netdisco
 
 CMD ["python3","-m","homeassistant", "--config","/data"]
