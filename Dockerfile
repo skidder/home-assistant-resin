@@ -12,6 +12,7 @@ RUN apt-get update \
     git \
     vim \
     bluetooth \
+    bluez \
     libbluetooth-dev \
     libboost-python-dev \
   # Remove package lists to free up space
