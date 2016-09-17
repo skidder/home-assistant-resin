@@ -18,7 +18,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install pybluez
-RUN pip3 install homeassistant
+RUN pip3 install homeassistant==0.28.2
 RUN pip3 install --upgrade cython
 
 RUN git clone https://github.com/OpenZWave/python-openzwave.git \
