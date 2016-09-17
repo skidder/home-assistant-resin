@@ -19,12 +19,5 @@ RUN apt-get update \
 
 RUN pip3 install pybluez
 RUN pip3 install homeassistant==0.28.2
-RUN pip3 install --upgrade cython
-
-RUN git clone https://github.com/OpenZWave/python-openzwave.git \
-  && cd python-openzwave \
-  && git checkout python3 \
-  && PYTHON_EXEC=$(which python3) make build \
-  && sudo PYTHON_EXEC=$(which python3) make install
 
 CMD ["python3","-m","homeassistant", "--config","/data"]
