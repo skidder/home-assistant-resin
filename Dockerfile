@@ -19,7 +19,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install pybluez
-RUN pip3 install homeassistant==0.29.6
+RUN pip3 install homeassistant==0.31.1
 RUN pip3 install sqlalchemy
 RUN pip3 install phue
 RUN pip3 install xmltodict
