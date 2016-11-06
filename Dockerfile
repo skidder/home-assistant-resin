@@ -11,14 +11,10 @@ RUN apt-get update \
     sudo \
     git \
     vim \
-    bluetooth \
-    bluez \
-    libbluetooth-dev \
     libboost-python-dev \
   # Remove package lists to free up space
   && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install pybluez
 RUN pip3 install homeassistant==0.32.0
 RUN pip3 install sqlalchemy
 RUN pip3 install phue
