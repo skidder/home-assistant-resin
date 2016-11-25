@@ -15,7 +15,7 @@ RUN apt-get update \
   # Remove package lists to free up space
   && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install homeassistant==0.32.3
+RUN pip3 install homeassistant==0.33.4
 RUN pip3 install sqlalchemy
 RUN pip3 install phue
 RUN pip3 install xmltodict
