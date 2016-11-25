@@ -17,6 +17,8 @@ RUN apt-get update \
 
 RUN pip3 install homeassistant==0.33.4
 RUN pip3 install sqlalchemy
+RUN pip3 install aiohttp_cors
+RUN pip3 install astral
 RUN pip3 install phue
 RUN pip3 install xmltodict
 RUN pip3 install cherrypy
