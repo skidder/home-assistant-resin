@@ -16,8 +16,8 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install homeassistant==0.35.3
-RUN pip3 install sqlalchemy==1.1.3
-RUN pip3 install aiohttp_cors==0.4.0
+RUN pip3 install sqlalchemy==1.1.4
+RUN pip3 install aiohttp_cors==0.5.0
 RUN pip3 install python-forecastio==1.3.5
 RUN pip3 install astral
 RUN pip3 install phue
