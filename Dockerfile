@@ -28,5 +28,7 @@ RUN pip3 install Werkzeug
 RUN pip3 install astral
 RUN pip3 install fuzzywuzzy
 RUN pip3 install netdisco
+RUN pip3 install urllib3
+RUN pip3 install pyunifi==1.3
 
 CMD ["python3","-m","homeassistant", "--config","/data"]
