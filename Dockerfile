@@ -1,4 +1,4 @@
-FROM resin/raspberrypi3-python:3.5.1-wheezy
+FROM resin/raspberrypi2-python:3.5.1-wheezy
 
 ENV INITSYSTEM on
 
