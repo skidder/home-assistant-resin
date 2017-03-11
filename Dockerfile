@@ -25,9 +25,10 @@ RUN pip3 install xmltodict
 RUN pip3 install cherrypy
 RUN pip3 install static3
 RUN pip3 install Werkzeug
-RUN pip3 install astral
+RUN pip3 install astral==1.3.4
 RUN pip3 install fuzzywuzzy
 RUN pip3 install netdisco==0.9.1
+RUN pip3 install distro==1.0.2
 RUN pip3 install urllib3
 RUN pip3 install pyunifi==1.3
 RUN pip3 install pyfttt
