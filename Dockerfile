@@ -33,4 +33,4 @@ RUN pip3 install urllib3
 RUN pip3 install pyunifi==1.3
 RUN pip3 install pyfttt
 
-CMD ["python3","-m","homeassistant", "--config","/data"]
+CMD ["PYTHONWARNINGS=\"ignore:Unverified HTTPS request\"",  "python3","-m","homeassistant", "--config","/data"]
