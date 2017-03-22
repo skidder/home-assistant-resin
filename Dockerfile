@@ -32,5 +32,6 @@ RUN pip3 install distro==1.0.2
 RUN pip3 install urllib3
 RUN pip3 install pyunifi==1.3
 RUN pip3 install pyfttt
+RUN pip3 install ring_doorbell==0.1.0
 
 CMD ["python3","-m","homeassistant","--config","/data"]
