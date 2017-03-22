@@ -15,7 +15,7 @@ RUN apt-get update \
   # Remove package lists to free up space
   && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install homeassistant==0.40.1
+RUN pip3 install homeassistant==0.40.0
 RUN pip3 install sqlalchemy
 RUN pip3 install aiohttp_cors
 RUN pip3 install python-forecastio
