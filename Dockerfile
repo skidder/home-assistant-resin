@@ -1,4 +1,4 @@
-FROM resin/raspberrypi-python:3.5.1-wheezy
+FROM resin/raspberrypi-python:3.6.0-wheezy
 
 ENV INITSYSTEM on
 
@@ -15,7 +15,7 @@ RUN apt-get update \
   # Remove package lists to free up space
   && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install homeassistant==0.40.2
+RUN pip3 install homeassistant==0.47.1
 RUN pip3 install sqlalchemy
 RUN pip3 install aiohttp_cors
 RUN pip3 install python-forecastio
@@ -27,11 +27,11 @@ RUN pip3 install static3
 RUN pip3 install Werkzeug
 RUN pip3 install astral==1.3.4
 RUN pip3 install fuzzywuzzy
-RUN pip3 install netdisco==0.9.2
+RUN pip3 install netdisco==1.0.1
 RUN pip3 install distro==1.0.2
 RUN pip3 install urllib3
-RUN pip3 install pyunifi==1.3
+RUN pip3 install pyunifi==2.13
 RUN pip3 install pyfttt
-RUN pip3 install ring_doorbell==0.1.0
+RUN pip3 install ring_doorbell==0.1.4
 
 CMD ["python3","-m","homeassistant","--config","/data"]
